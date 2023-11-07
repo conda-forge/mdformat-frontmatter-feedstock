@@ -1,5 +1,5 @@
 {% set name = "mdformat-frontmatter" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mdformat_frontmatter-{{ version }}.tar.gz
-  sha256: a05c188ba2f483ab434b4e46e312c1a2ccf145e9ab95e3f493f8967c182ffd5c
+  sha256: 7ea52a85eaab60f67c950b43cbedccbf3172c0edd3c47448b645e510e7ea7e1a
 
 build:
   noarch: python
