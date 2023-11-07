@@ -21,8 +21,8 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - mdformat >=0.7.0,<0.8.0
-    - mdit-py-plugins
+    - mdformat >=0.7.16,<0.8.0
+    - mdit-py-plugins >=0.4.0
     - ruamel.yaml
 
 test:
@@ -34,8 +34,8 @@ test:
     - pip
 
 about:
-  home: https://github.com/butler54/mdformat-frontmatter
   summary: An mdformat plugin for parsing / ignoring frontmatter.
+  dev_url: https://github.com/butler54/mdformat-frontmatter
   license: MIT
   license_file: LICENSE
 
