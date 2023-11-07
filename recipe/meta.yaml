@@ -34,6 +34,7 @@ test:
     - pip
 
 about:
+  home: https://github.com/butler54/mdformat-frontmatter
   summary: An mdformat plugin for parsing / ignoring frontmatter.
   dev_url: https://github.com/butler54/mdformat-frontmatter
   license: MIT
