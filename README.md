@@ -1,11 +1,11 @@
-About mdformat-frontmatter
-==========================
+About mdformat-frontmatter-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdformat-frontmatter-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/butler54/mdformat-frontmatter
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mdformat-frontmatter-feedstock/blob/main/LICENSE.txt)
 
 Summary: An mdformat plugin for parsing / ignoring frontmatter.
 
