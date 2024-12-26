@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mdformat_frontmatter-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mdformat_frontmatter-{{ version }}.tar.gz
   sha256: c11190ae3f9c91ada78fbd820f5b221631b520484e0b644715aa0f6ed7f097ed
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - flit-core >=2,<4
     - pip
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - mdformat >=0.7.16,<0.8.0
     - mdit-py-plugins >=0.4.0
     - ruamel.yaml
@@ -32,6 +32,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/butler54/mdformat-frontmatter
