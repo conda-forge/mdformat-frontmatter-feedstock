@@ -27,7 +27,6 @@ requirements:
     - mdformat >=0.7.16
     - mdit-py-plugins >=0.4.0
     - ruamel.yaml >=0.15
-    - ruamel_yaml >=0.15
 tests:
   - python:
       imports:
