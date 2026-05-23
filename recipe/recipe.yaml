@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mdformat-frontmatter
-  version: 2.0.10
+  version: 2.1.2
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mdformat_frontmatter-${{ version }}.tar.gz
-  sha256: decefcb4beb66cf111f17e8c0d82e60b208104c7922ec09564d05365db551bd8
+  sha256: 9c9c3159c38407f47e567202749c74ce7680017516cd158c82400f015c6a01d1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
@@ -26,8 +26,8 @@ requirements:
     - python >=${{ python_min }}
     - mdformat >=0.7.16
     - mdit-py-plugins >=0.4.0
-    - ruamel.yaml
-
+    - ruamel.yaml >=0.15
+    - ruamel_yaml >=0.15
 tests:
   - python:
       imports:
