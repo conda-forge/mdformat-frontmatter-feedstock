@@ -20,20 +20,21 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - hatchling
     - pip
+    - hatchling
   run:
     - python >=${{ python_min }}
     - mdformat >=1.0.0
     - mdit-py-plugins >=0.6.1
     - ruamel.yaml >=0.19.1
-    - ruamel_yaml >=0.19.1
 tests:
   - python:
       imports:
         - mdformat_frontmatter
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: An mdformat plugin for parsing / ignoring frontmatter.
